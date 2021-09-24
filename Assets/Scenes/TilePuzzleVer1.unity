@@ -664,7 +664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a371afc46b7c2794d9316518d30cd149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 0
   _tileDistance: 1.21
 --- !u!50 &359022862
@@ -785,9 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae19f68b595ffe745916e0e05376e51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 3
-  _tiles: []
 --- !u!1 &372255043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,7 +1269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a371afc46b7c2794d9316518d30cd149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 0
   _tileDistance: 1.21
 --- !u!50 &735635032
@@ -1713,7 +1709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a371afc46b7c2794d9316518d30cd149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 0
   _tileDistance: 1.21
 --- !u!50 &878099578
@@ -1930,9 +1925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae19f68b595ffe745916e0e05376e51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 2
-  _tiles: []
 --- !u!1 &1247671660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,9 +1996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae19f68b595ffe745916e0e05376e51c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 1
-  _tiles: []
 --- !u!1 &1286554772 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 411005213234738455, guid: e03e220b0244b4c49a390bd4aa105217,
@@ -3012,7 +3003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a371afc46b7c2794d9316518d30cd149, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameManager: {fileID: 519420030}
   _tileEnum: 0
   _tileDistance: 1.21
 --- !u!50 &1726783553
@@ -4448,6 +4438,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143577934166729639, guid: 8e5a8d6c61bd4814db1d548215713a6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e5a8d6c61bd4814db1d548215713a6b, type: 3}
