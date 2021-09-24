@@ -2,7 +2,6 @@
 
 public class Tiles : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManager;
     [SerializeField] private TileEnum _tileEnum;
     [SerializeField] private float _tileDistance = 1.21f;
 
@@ -12,11 +11,11 @@ public class Tiles : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (_gameManager.SelectedTiles == null)
+        if (GameManager.Instance.SelectedTiles == null)
         {
             if (_tileEnum != TileEnum.emptySpace)
             {
-                _gameManager.SelectedTiles = this;
+                GameManager.Instance.SelectedTiles = this;
             }
         }
         else
@@ -28,13 +27,13 @@ public class Tiles : MonoBehaviour
     {
         var clickedTile = gameObject;
         var clickedTilePosition = transform.position;
-        var selectedTilePosition = _gameManager.SelectedTiles.transform.position;
+        var selectedTilePosition = GameManager.Instance.SelectedTiles.transform.position;
         var distance = Vector2.Distance(selectedTilePosition, clickedTilePosition);
         if (_tileEnum == TileEnum.emptySpace && distance < _tileDistance)
         {
             clickedTile.transform.position = selectedTilePosition;
-            _gameManager.SelectedTiles.transform.position = clickedTilePosition;
+            GameManager.Instance.SelectedTiles.transform.position = clickedTilePosition;
         }
-        _gameManager.SelectedTiles = null;
+        GameManager.Instance.SelectedTiles = null;
     }
 }

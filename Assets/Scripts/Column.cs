@@ -3,10 +3,15 @@ using UnityEngine;
 
 public class Column : MonoBehaviour
 {
-    [SerializeField] private GameManager _gameManager;
     [SerializeField] private TileEnum _tileEnum;
-    [SerializeField] private List<Tiles> _tiles;
+    private List<Tiles> _tiles;
 
+
+
+    private void Start()
+    {
+        _tiles = new List<Tiles>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var triggeredTiles = collision.GetComponent<Tiles>();
@@ -16,7 +21,7 @@ public class Column : MonoBehaviour
             {
                 _tiles.Add(triggeredTiles);
             }
-            _gameManager.SetColumn(_tileEnum, _tiles.Count == 5);
+            GameManager.Instance.SetColumn(_tileEnum, _tiles.Count == 5);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
